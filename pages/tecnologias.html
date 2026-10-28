@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <title>tecnologias</title>
 </head>
+
 <body>
-    <header class="cabecera-principal">
-        <figure>
-            <img src="../imagenes/Logo-Mariano Ibarra.png" alt="Portafolio personal">
-        </figure>
-
-        <nav class="barra-navegacion">
-            <ul class="menu-lista">
-                <li><a class="menu-enlace" href="../index.html">Inicio</a></li>
-                <li><a class="menu-enlace" href="./sobreMi.html">Sobre mi</a></li>
-                <li><a class="menu-enlace" href="./proyectos.html">Proyectos</a></li>
-                <li><a class="menu-enlace" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg cabecera-bootstrap">
+        <div class="container-fluid px-4">
+            <!-- vuelve al index saliendo de Pages -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../imagenes/Logo-Mariano Ibarra.png" alt="Logo" class="imagen-logo-bootstrap">
+            </a>
+            <button class="navbar-toggler boton-hamburguesa" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item"><a class="nav-link menu-enlace-bs" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link menu-enlace-bs" href="./sobreMi.html">Sobre mi</a></li>
+                    <li class="nav-item"><a class="nav-link menu-enlace-bs" href="./tecnologias.html">Tecnologias</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link menu-enlace-bs" href="./proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link menu-enlace-bs" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <h1>Tecnologias</h1>
@@ -38,8 +50,12 @@
 
     <footer>
         <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
-        <a href="https://www.linkedin.com/in/mariano-ibarra-349b1785/" target="_blank" rel="noopener noreferrer">Mi Perfil de LinkedIn</a>   
+        <a href="https://www.linkedin.com/in/mariano-ibarra-349b1785/" target="_blank" rel="noopener noreferrer">Mi
+            Perfil de LinkedIn</a>
         <a href="https://github.com/marianoi1991" target="_blank" rel="noopener noreferrer">Github personal</a>
     </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
